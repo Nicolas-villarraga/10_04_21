@@ -15,7 +15,7 @@ class CreateProductStoresTable extends Migration
     {
         Schema::create('product_stores', function (Blueprint $table) {
             $table->id();
-            $table->bigint('amount');
+            $table->unsignedBigInteger('amount');
             $table->string('products_storecol',45);
             $table->timestamps();
         });
